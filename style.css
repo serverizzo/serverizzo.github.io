@@ -1,0 +1,264 @@
+
+
+/* global */
+
+* {
+    margin: 0;
+    padding:0;
+    text-decoration:none;
+    font-family:sans-serif;
+  /*   outline:pink solid 1px; */
+  }
+  
+  /* reuseable */
+  
+  
+  .color-primary{
+    background: #089191;
+  }
+  
+  .color-secondary{
+    background: #089108;
+  }
+  
+  .color-third{
+    background: #d1b900;
+  }
+  
+  
+  /* navigation */
+  
+  navbar {
+    position: fixed;
+  /*   background: red; */
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    justify-content:flex-end;
+    width: 100vw;
+    height: 100px;
+  }
+  
+  #link-container{
+    margin-right:100px;
+  }
+  
+  .nav-link{
+    margin:20px;
+  /*   outline:solid 1px black; */
+    text-decoration:none;
+    font-size:200%;
+    font-weight:600;
+  }
+  
+  /* frontpage */
+  
+  #welcome-section {
+  /*   background: orange; */
+  /*   border: red solid 1px; */
+    height: 100vh;
+  /*   width: 100vw;  Not sure why, but this extends beyond the page */
+    padding-top: 100px;
+  }
+  
+  #welcome-header-container{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content:center;
+    height:100vh
+  }
+  
+  #welcome-header{
+    font-size: 300%;
+  }
+  
+  #welcome-header-subtext{
+  }
+  
+  
+  
+  
+  /* projects */
+  
+  #projects{
+    height: 100vh;
+    padding-top: 100px;
+  }
+  
+  #projects-header-container{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+  }
+  
+  #projects-header{
+    font-size: 300%
+  }
+  
+  #project-showcase{
+  /*   border: 1px black solid; */
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .project-tile{
+    width: 30vw;
+    height:400px;
+    border-radius:20px;
+    background: #515252;
+    overflow:hidden;
+    display:flex;
+    flex-direction:column;
+  /*   justify-content:space-between; */
+    align-items: center;
+    margin-top:20px;
+  }
+  
+  .project-title{
+    width: 100%;
+    height:100%;
+    color:#babdbb;
+    margin-top:20px;
+    
+  }
+  
+  .project-img{
+    width: 100%;
+  }
+  
+  
+  /* More about me and other links */
+  
+  #other-links{
+    height: 100vh;
+    background-color:black;
+    padding-top: 100px;
+  }
+  
+  #more-about-me-title{
+    display:flex;
+    justify-content:center;
+    font-size:300%;
+    color:gray;
+  }
+  
+  #other-link-container{
+  /*   border:1px white solid; */
+    display: flex;
+    flex-direction:column;
+    padding-left:23%;
+  }
+  
+  
+  .link{
+    border:1px solid blue;
+    height:100px;
+    display: flex;
+    align-items:center;
+    background:grey;
+    width:70%;
+    margin-top:20px;
+  }
+  
+  .link-title{
+    font-size:300%;
+    margin-left:20px;
+  }
+  
+  
+  .other-link-img{
+    height:100px;
+    border-radius:90px;
+  /*   border:1px solid black; */
+  }
+  
+  
+  @media(max-width:768px){
+    
+    *{
+      
+    }
+    
+  /*  navbar  */
+    
+    navbar {
+    position: fixed;
+  /*   background: red; */
+    display:flex;
+    flex-direction:column;
+    flex-wrap:wrap;
+    align-items:center;
+    justify-content:flex-end;
+    width: 100vw;
+    height: 100px;
+  }
+    
+  /*  welcome  */
+    
+  #welcome-header-container{
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction:column;
+    align-items: center;
+    justify-content:center;
+    height:100vh;
+    padding-left:20px;
+    padding-right:20px;
+  }
+    
+    
+  /*  Projects  */
+    #projects{
+      height: auto;
+      padding-top: 100px;
+      padding-bottom:10px;
+    }
+    
+    #projects-header-container{
+      padding:20px;
+    }
+    
+    .project-tile{
+    width:100%;
+    height:auto;
+    border-radius:20px;
+    background: #515252;
+    overflow:hidden;
+    display:flex;
+    flex-direction:column;
+  /*   justify-content:space-between; */
+    align-items: center;
+    margin-top:20px;
+  }
+    
+  .project-title{
+    width: 100%;
+    height:100%;
+    color:#babdbb;
+    margin-top:00px;
+  }
+    
+    
+  /*  Otherlinks  */
+    
+  .link{
+    padding:0;
+    border:1px solid blue;
+    height:100px;
+    display: flex;
+    align-items:center;
+    background:grey;
+    width:100%;
+    margin-top:20px;
+  }
+    
+    
+  #other-link-container{
+    display: flex;
+    flex-direction:column;
+    padding-left:0%;
+  }
+    
+  }
