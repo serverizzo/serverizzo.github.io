@@ -1,137 +1,160 @@
-<!-- TODO 
-  replace the href of other link imgs to images that are stored locally. What we have right now is placeholders since we cannot upload to codepen.io
 
-  
+<html lang="en">
+  <head> 
+    <title> Edward Cerverizzo's Portfolio</title>
+    <!-- Load bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
--->
+    <!-- load my style -->
+    <link rel="stylesheet" href="style2.css">
 
-<head>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <!-- load bootstrap js--prob will not need -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 
-<navbar id="navbar" class="color-secondary">
-  <div id="link-container">
-    <a class="nav-link" href="#welcome-section"> Welcome </a>
-    <a class="nav-link" href="#projects"> Projects </a>
-    <a class="nav-link" href="#other-links"> More about me </a>
-  </div>
-</navbar>
+  </head>
 
-<section id="welcome-section" class="color-primary">
-  
-  <div id = "welcome-header-container"> 
-    <h1 id = "welcome-header"> Hello! My name is Edward Cerverizzo </h1>
-    <h2 id = "welcome-header-subtext"> <i> Software engineer and web developer </i> </h2>
-  </div>
-</section>
+  <body id = "body">
 
-<!-- Projects Section -->
+    <div class = "navbar-background">
+      <div class="navbar">
+        <a href="#intro">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#other-links">Contact</a>
+      </div>
+    </div>
 
-<section id="projects" class="color-third">
-  <div id = "projects-header-container">
-    <h1 id = "projects-header"> Here is some of the stuff I have done </h1>
-  </div>
-  <div id="project-showcase">
+    <div id = "intro" class = "container-fluid intro">
+        <img src="./imgs/PurpleShirtAndGoldTie.jpg" alt="profile-pic" class = "profile-pic">
+        <h1 class="">Edward Cerverizzo</h1>
+        <p class="lead">Hello! I am a software engineer in the NYC area looking for employment. Here is some more text to see if my website is up to par before I begin my next big move into my career! Lalalalala, doodoodoodoo. I am so happy to be alive :)</p>
+    </div>
 
-    <!--   tile 1   -->
-    <a href="https://codepen.io/EdwardCerverizzo/pen/RwbLGmb" target="_blank">
-      <div class="project-tile">
-        <img class="project-img" src="https://screenshot.codepen.io/3338257.RwbLGmb.small.b88b2bcc-c308-426c-9d2b-c90c026d135a.png" </img>
-        <!--    Need the next div so flexbox can center the project titile (align-items)      -->
-        <div>
-          <h2 class="project-title"> Technical Documentation Page </h2>
+    <!-- <div class = "container-fluid intro">
+      <div class = "container box">
+      <div class = "box myImgContainer">
+        <img src="./imgs/PurpleShirtAndGoldTie.jpg" alt="profile-pic" class = "profile-pic img-fluid">
+      </div>
+      <h1 class="display-2">Edward Cerverizzo</h1>
+      <p class="lead">Hello! I am a software engineer in the NYC area looking for employment. Here is some more text to see if my website is up to par before I begin my next big move into my career! Lalalalala, doodoodoodoo. I am so happy to be alive :)</p>
+    </div>
+    </div> -->
+
+    
+    <!-- <div class="jumbotron jumbotron-fluid">
+      <div class="container box">
+        <div class = "box"> 
+          <img src="./imgs/PurpleShirtAndGoldTie.jpg" alt="profile-pic" class = "profile-pic img-fluid float-right">
+          <h1 class="display-2">Edward Cerverizzo</h1>
+        <p class="lead">Hello! I am a software engineer in the NYC area looking for employment. Here is some more text to see if my website is up to par before I begin my next big move into my career! Lalalalala, doodoodoodoo. I am so happy to be alive :)</p>
+      </div>
+      </div>
+    </div> -->
+
+
+    <div id = "projects" class="container">
+
+      <div class="projects-container">
+
+        <!-- How can I incorperate my youtube channel? -->
+        <div class="row row-cols-3">
+
+          <div class="col-md-12 col-lg-4 card" style="width: 18rem;">
+            <div class="card-body">
+              <img src= "imgs/CS211.jpg" class = "card-img-top" alt="">
+              <h5 class="card-title">CS211 Website</h5>
+              <p class="card-text">Teaching material and lectures for my lab section at CUNY Queens College</p>
+              <a href="https://serverizzo.github.io/CppCer/" target="_blank" class="btn btn-primary">Website</a>
+              <a href="https://www.youtube.com/channel/UCMmumC43YMfxcAynwV1chVQ?view_as=subscriber" target="_blank" class="btn btn-primary">Youtube</a>
+            </div>
+          </div>
+
+          <div class="col-md-12 card col-lg-4" style="width: 18rem;">
+            <div class="card-body">
+              <img src= "imgs/Black-Screen.jpg" class = "card-img-top" alt="">
+              <h5 class="card-title">CS 211 Website</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="https://serverizzo.github.io/CppCer/" target="_blank" class="btn btn-primary">Go</a>
+            </div>
+          </div>
+          
+          <div class="col-md-12 card col-lg-4" style="width: 18rem;">
+            <!-- <img src= "imgs/atoms.PNG" class = "card-img-top" alt=""> -->
+            <div class="card-body">
+              <iframe src="https://editor.p5js.org/edwardC/embed/A9ngKHcrm"></iframe>
+              <h5 class="card-title">Orbiting atoms</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="https://editor.p5js.org/edwardC/present/A9ngKHcrm" target="_blank" class="btn btn-primary">Demo</a>
+              <a href="https://editor.p5js.org/edwardC/sketches/A9ngKHcrm" target="_blank" class="btn btn-primary">Demo with code</a>
+            </div>
+          </div>
+
+        </div>
+
+        <br>
+
+        <div class="row">
+          
+          <div class="col-md-12 card col-lg-4" style="width: 18rem;">
+            <img src= "imgs/rockclimbing.PNG" class = "card-img-top" alt="">
+            <div class="card-body">
+              <h5 class="card-title">Technical Documentation Page</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="https://codepen.io/EdwardCerverizzo/full/RwbLGmb" target = "_blank" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+          
+          <div class="col-md-12 card col-lg-4" style="width: 18rem;">
+            <div class="card-body">
+              <img src= "imgs/senses.PNG" class = "card-img-top" alt="">
+              <h5 class="card-title">Random Quote Generator</h5>
+              <p class="card-text">Built with React</p>
+              <a href="https://codepen.io/EdwardCerverizzo/full/oNbNgqb" target="_blank" class="btn btn-primary">Go</a>
+            </div>
+          </div>
+
+          <div class="col-md-12 card col-lg-4" style="width: 18rem;">
+            <div class="card-body">
+              <iframe src="https://editor.p5js.org/edwardC/embed/Fmmf7AYeS"></iframe>
+              <h5 class="card-title">Random Quote Generator</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="https://codepen.io/EdwardCerverizzo/full/XWJyYOV" target="_blank" class="btn btn-primary">Go</a>
+            </div>
+          </div>
+        
+        </div>
+
+      </div>
+       
+
+    </div>
+
+
+      <div id = "other-links" class = "other-links">
+        <div class = "container">
+          <div class = "other-links-container">
+            <h1>Other Links</h1>
+            <!-- Github -->
+            <a target = "_blank" href="https://github.com/serverizzo" target = "_blank">
+              <button type="button" class="btn btn-primary btn-lg btn-block my-btn">Github</button>
+            </a>
+            <!-- linkedin -->
+            <a target = "_blank" href="https://www.linkedin.com/in/edward-cerverizzo-407803128/">
+              <button type="button" class="my-btn btn btn-secondary btn-lg btn-block">LinkedIn</button>
+            </a>
+          
+            <!-- Resume -->
+            <a href="./Cerverizzo_Edward_resume.pdf" target = "_blank">
+              <button type="button" class="my-btn btn btn-secondary btn-lg btn-block">Resume</button>
+            </a>
+        <!--  -->
+          </div>
         </div>
       </div>
-    </a>
+    </div>
 
-    <!--   tile 2   -->
-    <a href="https://codepen.io/EdwardCerverizzo/full/XWJyYOV" target="_blank">
-      <div class="project-tile">
-        <img class="project-img" src="https://screenshot.codepen.io/3338257.BXqVvy.small.8b280a47-76c4-4a1d-90f7-91cc6b7bdc96.png" </img>
-        <!--    Need the next div so flexbox can center the project titile (align-items)      -->
-        <div>
-          <h2 class="project-title"> Random Quote Generator </h2>
-        </div>
-      </div>
-    </a>
+    
 
-    <!--   tile 3   -->
-    <a href="https://codepen.io/EdwardCerverizzo/full/RwbLGmb" target="_blank">
-      <div class="project-tile">
-        <img class="project-img" src="https://screenshot.codepen.io/3338257.BXqVvy.small.8b280a47-76c4-4a1d-90f7-91cc6b7bdc96.png" </img>
-        <!--    Need the next div so flexbox can center the project titile (align-items)      -->
-        <div>
-          <h2 class="project-title"> Technical Documentation Page </h2>
-        </div>
-      </div>
-    </a>
-
-    <!--   tile 4   -->
-    <a href="https://codepen.io/EdwardCerverizzo/pen/BXqVvy" target="_blank">
-      <div class="project-tile">
-        <img class="project-img" src="https://screenshot.codepen.io/3338257.BXqVvy.small.8b280a47-76c4-4a1d-90f7-91cc6b7bdc96.png" </img>
-        <!--    Need the next div so flexbox can center the project titile (align-items)      -->
-        <div>
-          <h2 class="project-title"> Tribute Page </h2>
-        </div>
-      </div>
-    </a>
-
-    <!--   tile 5   -->
-    <a href="https://codepen.io/EdwardCerverizzo/pen/BXqVvy" target="_blank">
-      <div class="project-tile">
-        <img class="project-img" src="https://screenshot.codepen.io/3338257.BXqVvy.small.8b280a47-76c4-4a1d-90f7-91cc6b7bdc96.png" </img>
-        <!--    Need the next div so flexbox can center the project titile (align-items)      -->
-        <div>
-          <h2 class="project-title"> Tribute Page </h2>
-        </div>
-      </div>
-    </a>
-
-    <!--   tile 6   -->
-    <a href="https://codepen.io/EdwardCerverizzo/pen/BXqVvy" target="_blank">
-      <div class="project-tile">
-        <img class="project-img" src="https://screenshot.codepen.io/3338257.BXqVvy.small.8b280a47-76c4-4a1d-90f7-91cc6b7bdc96.png" </img>
-        <!--    Need the next div so flexbox can center the project titile (align-items)      -->
-        <div>
-          <h2 class="project-title"> Tribute Page </h2>
-        </div>
-      </div>
-    </a>
-
-    <!--  showcase end    -->
-  </div>
-
-</section>
-
-
-
-
-<!-- More about me -->
-<section id="other-links">
-  <div id="more-about-me-title">
-    <h2> More about me </h2>
-  </div>
-
-  <div id="other-link-container">
-
-    <!--  github  -->
-    <a id="profile-link" href="https://github.com/serverizzo" target="_blank">
-      <div class="link">
-        <img class="other-link-img" src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png">
-        <span class="link-title"> My Github </span>
-      </div>
-    </a>
-
-    <!-- Codepen  -->
-    <a href="https://codepen.io/collection/XRLGkY">
-      <div class="link">
-        <img class="other-link-img" src="https://blog.codepen.io/wp-content/uploads/2012/06/Button-Black-Small.png">
-        <span class="link-title"> Older projects </span>
-      </div>
-    </a>
-
-  </div>
-  <!-- link-container end -->
-
-</section>
+  </body>
+</html>

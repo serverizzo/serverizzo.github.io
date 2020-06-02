@@ -1,0 +1,82 @@
+:root{
+    --max-height: 60vh;
+}
+
+
+#body{
+    /* margin-bottom: 200px; */
+}
+
+.jumbotron{
+    height: 60vh;
+}
+
+.projects-container{
+    margin-bottom: 100px;
+    padding-top: 100px;
+}
+
+.other-links{
+    background-color: #c8c9ca;
+    padding: 100px 0px 0 0px;
+    height: 100vh;
+}
+
+.other-links-container{
+    /* display: flex; */
+    flex-direction: column;
+    /* justify-content: space-between; */
+    /* border: solid; */
+    /* height: 60vh; */
+}
+
+.my-btn{
+    margin-top: 50px;
+    height: 80px;
+    font-size: 200%;
+}
+
+.profile-pic{
+    border-radius: 50px;
+    /* min-width: 300px;
+    max-width: 100%;
+    height: auto;  */
+}
+
+
+.box{
+    border-style: solid;
+}
+
+.intro{
+    background-color:  #c8c9ca;
+    padding: 10vh 20vw 10vh 20vw;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navbar{
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    /* border: solid; */
+    width: 60vw;
+    margin: 0 20vw 0 20vw;
+    font-size: 200%;
+}
+.navbar-background{
+    position: fixed;
+    /* border: solid; */
+    background-color: white;
+    width: 100vw;
+    height: 60px;
+    z-index: 2000;
+}
+
+/* img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+  } */
