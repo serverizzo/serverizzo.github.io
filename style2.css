@@ -50,7 +50,7 @@
 
 .intro {
     background-color: #c8c9ca;
-    padding: 10vh 20vw 10vh 20vw;
+    padding: 10vh 20vw 2vh 20vw;
     height: 70vh;
     display: flex;
     flex-direction: column;
@@ -85,4 +85,8 @@
 .title {
     color: #007bff;
     font-size: 400%;
+}
+
+.about {
+    font-size: 130%;
 }
