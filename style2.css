@@ -1,28 +1,28 @@
-:root{
+:root {
     --max-height: 60vh;
 }
 
 
-#body{
+#body {
     /* margin-bottom: 200px; */
 }
 
-.jumbotron{
+.jumbotron {
     height: 60vh;
 }
 
-.projects-container{
+.projects-container {
     margin-bottom: 100px;
     padding-top: 100px;
 }
 
-.other-links{
-    background-color: #c8c9ca;
+.other-links {
+    background-color: #2d2d2d;
     padding: 100px 0px 0 0px;
     height: 100vh;
 }
 
-.other-links-container{
+.other-links-container {
     /* display: flex; */
     flex-direction: column;
     /* justify-content: space-between; */
@@ -30,13 +30,13 @@
     /* height: 60vh; */
 }
 
-.my-btn{
+.my-btn {
     margin-top: 50px;
     height: 80px;
     font-size: 200%;
 }
 
-.profile-pic{
+.profile-pic {
     border-radius: 50px;
     /* min-width: 300px;
     max-width: 100%;
@@ -44,12 +44,12 @@
 }
 
 
-.box{
+.box {
     border-style: solid;
 }
 
-.intro{
-    background-color:  #c8c9ca;
+.intro {
+    background-color: #c8c9ca;
     padding: 10vh 20vw 10vh 20vw;
     height: 70vh;
     display: flex;
@@ -57,7 +57,7 @@
     align-items: center;
 }
 
-.navbar{
+.navbar {
     position: fixed;
     display: flex;
     justify-content: space-between;
@@ -66,12 +66,13 @@
     margin: 0 20vw 0 20vw;
     font-size: 200%;
 }
-.navbar-background{
+
+.navbar-background {
     position: fixed;
     /* border: solid; */
-    background-color: white;
+    background-color: #2d2d2d;
     width: 100vw;
-    height: 60px;
+    height: 70px;
     z-index: 2000;
 }
 
@@ -80,3 +81,8 @@
     display: block;
     height: auto;
   } */
+
+.title {
+    color: #007bff;
+    font-size: 400%;
+}
